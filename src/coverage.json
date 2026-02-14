@@ -1,0 +1,39 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-14T05:42:49.761Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 1,
+    "implemented": 1,
+    "items": [
+      {
+        "id": "REQ-8",
+        "summary": "Add the newly uploaded images (683CEC41-3F5D-48A7-A96D-FC2FE9C2332B-2.png and 683CEC41-3F5D-48A7-A96D-FC2FE9C2332B-3.png) to the frontend as static assets and update the beginning of the page (the Hero section at the top) to display one of these new images instead of the currently referenced uploaded hero image.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/public/assets/uploaded/683CEC41-3F5D-48A7-A96D-FC2FE9C2332B-2.png",
+          "frontend/public/assets/uploaded/683CEC41-3F5D-48A7-A96D-FC2FE9C2332B-3.png",
+          "frontend/src/components/Hero.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Hero.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/src/components/Hero.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

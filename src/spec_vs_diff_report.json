@@ -1,0 +1,39 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-14T05:42:49.759Z",
+  "summary": "Hero component was updated to render one of the new uploaded images (…-2.png) as the hero background via an <img> tag, while keeping the gradient overlay, title text, scroll indicator, and background audio player. However, the diff does not show the new image assets being added to the bundle (and specifically does not evidence presence of both …-2.png and …-3.png).",
+  "missing_requirements": [
+    {
+      "id": "REQ-8",
+      "requirement": "Both files 683CEC41-3F5D-48A7-A96D-FC2FE9C2332B-2.png and 683CEC41-3F5D-48A7-A96D-FC2FE9C2332B-3.png are present in the built frontend bundle as static assets under the existing public assets convention (e.g., /assets/uploaded/...).",
+      "reason": "The diff shows no added static asset files (Added: 0). Only the Hero component reference was changed to point to the -2.png path; there is no evidence that either image file (especially -3.png) was added to the repo/bundle under /assets/uploaded/.",
+      "evidence": [
+        "<file-diff> Added: 0, Modified: 3, Removed: 0",
+        "frontend/src/components/Hero.tsx"
+      ]
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "Updated/maintained project metadata/state not requested by the BuildRequest (project_state.json).",
+      "reason": "BuildRequest only asks to add static assets and update the Hero image; it does not request changes to project tracking metadata.",
+      "evidence": [
+        "project_state.json"
+      ]
+    },
+    {
+      "description": "Updated/maintained a frontend file summary document not requested by the BuildRequest (frontend-file-summaries.txt).",
+      "reason": "BuildRequest does not request documentation/file summary updates.",
+      "evidence": [
+        "frontend-file-summaries.txt"
+      ]
+    }
+  ],
+  "confidence": 0.74,
+  "changed_files": [
+    "frontend-file-summaries.txt",
+    "frontend/src/components/Hero.tsx",
+    "project_state.json"
+  ]
+}

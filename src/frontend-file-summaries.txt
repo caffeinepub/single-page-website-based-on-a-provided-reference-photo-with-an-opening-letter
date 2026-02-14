@@ -1,0 +1,11 @@
+{
+  "frontend/src/App.tsx": "Main application component that composes the Hero, OpeningLetter, and Footer sections into a single-page landing experience.",
+  "frontend/src/components/Hero.tsx": "Full-screen hero section with the proposal image (683CEC41-3F5D-48A7-A96D-FC2FE9C2332B-2.png) as background, gradient overlay for text readability, centered title, animated scroll indicator, and integrated background audio player control.",
+  "frontend/src/components/OpeningLetter.tsx": "Card-based letter component displaying a heartfelt Valentine's Day message with formatted date, greeting, multi-paragraph body content with emojis, and signature using serif typography for an elegant feel.",
+  "frontend/src/components/Footer.tsx": "Footer component with Caffeine.ai attribution link including UTM parameters and copyright notice.",
+  "frontend/src/index.css": "Global stylesheet defining a warm, elegant OKLCH color palette (cream, terracotta, warm browns) with custom font imports (Crimson Text serif and Inter sans) for both light and dark modes.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with custom font families, warm color tokens, custom shadows, and typography settings aligned with the elegant letter theme.",
+  "frontend/index.html": "HTML entry point with updated title and meta description for the personal letter landing page.",
+  "frontend/src/hooks/useQueries.ts": "Placeholder file for future React Query hooks; currently empty as no backend queries are needed.",
+  "frontend/src/components/BackgroundAudioPlayer.tsx": "React component that renders an HTML audio element with a floating play/pause button control, attempts autoplay with graceful fallback, and manages playback state with loop and volume settings."
+}

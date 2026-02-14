@@ -1,0 +1,40 @@
+{
+  "kind": "build_request",
+  "title": "Add newly uploaded image to the beginning (Hero) section",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-8",
+      "text": "Add the newly uploaded images (683CEC41-3F5D-48A7-A96D-FC2FE9C2332B-2.png and 683CEC41-3F5D-48A7-A96D-FC2FE9C2332B-3.png) to the frontend as static assets and update the beginning of the page (the Hero section at the top) to display one of these new images instead of the currently referenced uploaded hero image.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-6"
+        ],
+        "quotes": [
+          "add this image in beginning"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Both files 683CEC41-3F5D-48A7-A96D-FC2FE9C2332B-2.png and 683CEC41-3F5D-48A7-A96D-FC2FE9C2332B-3.png are present in the built frontend bundle as static assets under the same public assets convention used for existing uploaded hero images (e.g., /assets/uploaded/...).",
+        "The Hero section at the top of the page renders one of the newly uploaded images as its background/cover image on initial page load.",
+        "The previous hero image reference (/assets/uploaded/683CEC41-3F5D-48A7-A96D-FC2FE9C2332B.png) is no longer used by the Hero component after this change.",
+        "No layout regressions: the Hero remains full-screen with the existing gradient overlay, title text, scroll indicator, and background audio player control still visible and functional."
+      ]
+    }
+  ],
+  "constraints": [
+    "Frontend files listed in frontend.immutablePaths must not be edited (compose existing UI components instead).",
+    "Keep the existing single-page structure (Hero + OpeningLetter + Footer).",
+    "No backend changes are required for this request."
+  ],
+  "nonGoals": [
+    "Creating new pages or navigation.",
+    "Adding new interactive galleries/carousels for multiple images (unless explicitly requested).",
+    "Changing the Opening Letter text or styling beyond what is necessary to place the new image at the beginning."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

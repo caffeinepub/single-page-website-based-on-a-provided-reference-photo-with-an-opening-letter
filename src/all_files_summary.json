@@ -1,0 +1,19 @@
+{
+  "backend/main.mo": "Empty Motoko actor with no implemented methods.",
+  "feature_evidence.json": "Feature evidence report describing frontend hero image update and listing associated files and components.",
+  "frontend-file-summaries.txt": "Prewritten summaries of all frontend files for reference or documentation.",
+  "frontend/index.css": "Tailwind base styles with OKLCH custom color variables for light and dark modes.",
+  "frontend/index.html": "HTML entry point mounting the React app and setting basic metadata.",
+  "frontend/src/App.tsx": "Main React component assembling the Hero, OpeningLetter, and Footer sections.",
+  "frontend/src/components/BackgroundAudioPlayer.tsx": "Audio player component providing autoplay attempt, play/pause control, and floating UI button.",
+  "frontend/src/components/Footer.tsx": "Footer showing attribution link and current year with a small decorative layout.",
+  "frontend/src/components/Hero.tsx": "Full-screen hero section with background image, overlay text, scroll indicator, and audio player.",
+  "frontend/src/components/OpeningLetter.tsx": "Card-styled letter section displaying a formatted date, multi-paragraph message, and signature.",
+  "frontend/src/hooks/useActor.ts": "React hook creating and managing a backend actor instance tied to Internet Identity state.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Internet Identity context and provider handling authentication, stored identities, and login state.",
+  "frontend/src/hooks/useQueries.ts": "Placeholder file for future React Query hooks with no current logic.",
+  "frontend/src/index.css": "Global Tailwind styles with imported fonts and a warm letter-inspired color palette for light and dark modes.",
+  "frontend/src/main.tsx": "Bootstraps the React app, wrapping it in React Query and the InternetIdentityProvider before rendering App.",
+  "frontend/tailwind.config.js": "Configures Tailwind with typography, container queries, animations, custom colors, fonts, shadows, and theme extensions.",
+  "project_state.json": "Stores the project’s current state, including requirements, features, architectural notes, and missing assets."
+}
